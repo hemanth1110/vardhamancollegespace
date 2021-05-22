@@ -3,7 +3,7 @@
     padding: 0;
 }
 .bg-container{
-    background-image: url("/bg-container.jpg");
+    background-image: url("bg-container.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
