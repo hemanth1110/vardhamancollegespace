@@ -1,0 +1,41 @@
+.bg-container-exam-corner {
+  display: grid;
+  grid-template-rows: 8vh 86vh 6vh;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "a a"
+    "s l"
+    "f f";
+}
+.nav-row-1 {
+  background-image: url("/img/bg-container.jpg");
+  grid-area: a;
+}
+.foot-1 {
+  text-align: center;
+  color: white;
+  height: 6vh;
+  font-family: "Pattaya", sans-serif;
+  background-image: url("/img/bg-container.jpg");
+  grid-column: f;
+}
+.select-subject {
+  background-color: red;
+  grid-area: s;
+}
+.subject-list {
+  background-color: gold;
+  grid-area: l;
+}
+@media (max-width: 768px) {
+  .bg-container-exam-corner {
+    display: grid;
+    grid-template-rows: 8vh 50vh 36vh 6vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "s"
+      "l"
+      "f";
+  }
+}
